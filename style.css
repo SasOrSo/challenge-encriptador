@@ -1,0 +1,190 @@
+html, body{
+height: auto;
+width: auto;
+}
+
+body{
+    background: linear-gradient(#004c26, #4a9f46);
+}
+
+header{
+    width: 100%;
+    font-family: "Sigmar", sans-serif;
+    text-align: center;
+    clear: left;
+    display: inline-block;
+}
+
+header > h1{
+    color: white;
+    margin-top: 2%;
+    font-weight: 900;
+    font-size: 2em;
+}
+
+header > p{
+    color:#4a9f46;
+    margin-top: 2%;
+    font-weight: 600;
+    font-size: 2em;
+}
+
+header > img{
+    float: left;
+    width: 15%;
+    height: 25%;
+    margin-left: 5%;
+}
+
+main{
+    width: 100%;
+}
+
+.ingreso-texto, .salida-texto{
+    display: inline-block;
+    vertical-align: top;
+    margin: 25px 20px 20px 20px;
+}
+
+#texto-original{
+    width: 577px;
+    height: 48px;
+    background: none;
+    border: none;
+    margin-left: 100px;
+}
+
+::placeholder{
+    font-size: 1em;
+    color: orange;
+}
+
+.caracteresespeciales{
+    margin-left: 100px;
+    margin-top: 320px;
+    font-style: italic;
+    color: #30522a;
+}
+
+.botones-input{
+    margin-top: 50px;
+    width: 200px;
+    border-radius: 24px;
+    padding: 14px;
+    font-weight: 400;
+    font-size: 15px;
+}
+
+#encriptar{
+    margin-left: 45px;
+}
+
+#desencriptar{
+    margin-left: 25px;
+}
+
+.botones-input:hover{
+    transform: scale(1.2);
+}
+
+#resultado-encriptado{
+    width: 500px;
+    height: 300px;
+    border-radius: 12px;
+    background-color: #4a9f46;
+    border-style: double;
+    resize: none;
+    margin-left: 80px;
+}
+
+.botones-output{
+    display: block;
+    margin-top: 130px;
+    margin-left: 80px;
+    width: 200px;
+    border-radius: 24px;
+    padding: 14px;
+    font-weight: 400;
+    font-size: 15px;
+}
+
+.botones-output:hover{
+    transform: scale(1.2);
+}
+
+footer{
+    margin: 10%;
+}
+
+footer > p{
+    margin-top: 30px;
+    text-align: center;
+    color: darkorange;
+    font-style: italic;
+    font-size: 20px;
+}
+
+footer > img{
+    float: right;
+    width: 10%;
+    height: 20%;
+    margin-right: 5%;  
+}
+
+@media screen and (max-width:480px){
+    header > h1, p{
+    margin: 30px 0 15px 280px;
+    }
+
+    #texto-original{
+        width: 688px;
+        height: 48px;
+        margin-top: 60px;
+        margin-left: 40px;
+    }
+
+    .caracteresespeciales{
+        text-align: left;
+        font-size: 15px;
+        font-style: italic;
+        margin: 160px 0 0 40px;
+    }
+
+    .botones-input{
+        display: block;
+        margin-top: 20px;
+        width: 200px;
+        font-weight: 300;
+        font-size: 9px;
+    }
+
+    #encriptar{
+        margin-left: 40px;
+    }
+
+    #desencriptar{
+        margin-left: 45px;
+    }
+
+    #resultado-encriptado{
+    width: 588px;
+    height: 288px;
+    margin-top: 60px;
+    margin-left: 40px;
+    }
+
+    .botones-output{
+        margin-top: 20px;
+        margin-left: 40px;
+    }
+
+    footer{
+        width: 100%;
+    }
+
+    footer > p{
+    font-size: 9px;
+    text-align: center;
+    }
+}
+

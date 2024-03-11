@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="es">
+
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width">
+        <title>Encriptador de texto</title>
+        <script src="script.js"></script>
+        <link rel="stylesheet" href="reset.css">
+        <link rel="stylesheet" href="style.css">
+    </head>
+
+    <body>
+
+        <header>
+          <h1>¡Hola visitante!</h1>
+          <img src="Imagenes/Gon-final.png" id="gon-hxh"> 
+          <p>¿Listo para encriptar?</p>
+        </header>
+
+        <main>
+
+            <section class="ingreso-texto">
+
+                <input type="text" id="texto-original" placeholder="Ingrese su texto aqui" value="">
+
+                <p class="caracteresespeciales">&#9888 No se permiten mayusculas ni caracteres especiales</p>
+
+                <button onclick="revisarMayusculas()" class="botones-input" id="encriptar">Encriptar</button>
+                <button onclick="desencriptarTexto()" class="botones-input" id="desencriptar">Desencriptar</button> 
+
+            </section>
+
+            <section class="salida-texto">              
+
+                <label for="resultado-encriptado"></label>
+                <textarea id="resultado-encriptado" rows="8" cols="33" readonly></textarea>
+
+                <button onclick="copiar()" class="botones-output" id="copiartexto">Copiar</button>       
+
+            </section>
+
+        </main>
+
+    
+    <footer>
+        <p class="copyright">&copy Saskya Ortega | 2024</p>
+        <img src="Imagenes/Killua-final.png" id="killua">
+    </footer>
+
+    </body>
+
+</html>
